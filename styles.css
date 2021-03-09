@@ -1,1 +1,30 @@
 
+/*let the styling begin....
+*/
+
+h1  {
+    color:#0ac0c0;
+    margin: 10px;
+    padding: 15px;
+    
+}
+
+h2  {
+    text-align: center;
+}
+
+p,a.figure-link   {
+    font-size: 20px;
+    margin: 15px;
+}
+
+li  {
+    font-size: 20px;
+}
+
+.navbar-brand-box   {
+    padding: 5px;
+    font-weight: bold;
+    margin: auto;
+    
+}
