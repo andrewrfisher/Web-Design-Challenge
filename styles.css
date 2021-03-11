@@ -2,29 +2,130 @@
 /*let the styling begin....
 */
 
-h1  {
-    color:#0ac0c0;
-    margin: 10px;
-    padding: 15px;
-    
+/* Body */
+body.background    {
+    background-color: #ece9e9; 
 }
 
 h2  {
+    color: #0BADA6;
+    font-weight: bolder;
+    
+}
+
+
+li,p,a.figure-link   {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* bootstrap navbar edits */
+
+.active, .dropdown-menu .dropdown-item:active a:hover{
+    background-color:#E7E7E7!important; 
+}
+.dropdown-item{
+    color: #6D8092 !important; 
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color:#E7E7E7 !important; 
+}
+a{
+    color: #6D8092;
+    font-size: 15px; 
+}
+.nav-link:hover{
+    background-color:#E7E7E7 !important;
+   }
+
+.navbar-brand:hover{
+color: rgb(175, 175, 175) !important;
+}
+
+
+/* main title Class  */
+.main-title{
+    color: #0BADA6;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder; 
+    padding-top: 25px; 
+}
+
+/* img on the home page*/
+img.home-img    {
+    margin: auto;
+    width: 45%;
+    float:left;
+}
+
+/* img on the home page in visualization box*/
+img.home-vis-img    {
+    margin: auto;
+    width: 100%;
+    float:left;
+}
+
+/* div box for latitude title at top of page */
+.navbar-brand-box   {
+    margin: auto;
+    background-color: #0BADA6;
     text-align: center;
 }
 
-p,a.figure-link   {
-    font-size: 20px;
-    margin: 15px;
-}
-
-li  {
-    font-size: 20px;
-}
-
-.navbar-brand-box   {
+/* Latitude title on top left of page */
+#latitude   {
+    color: white;
     padding: 5px;
+    text-align: center;
     font-weight: bold;
     margin: auto;
-    
+}
+
+/* p tags on the comparison page */
+p.title {
+    text-align: center;
+    color: #0BADA6;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+/* images on comparison page */
+img.comparisons   {
+    margin: auto;
+    display:block;
+    width: 85%;
+    padding: 10px;
+}
+
+/* Solid border/section */
+hr.solid {
+    border-top: 1px solid #bbb;
+  }
+
+/* Box Class homepage */
+.box {
+    margin-top: 60px; 
+    margin-bottom: 62px; 
+    padding: 10px 20px 15px; 
+    color:black;
+    background-color: white; 
+
+  }
+
+/* Box Class homepage */
+.data   {
+    font-size: 15px;
+    border-top-color:white;
+    overflow-y: auto;
+    overflow-x: auto;
+    max-width: auto;
+
+}
+
+  /* Media Queries */
+@media(max-width: 992px){
+    .navbar-expand-lg   {
+    background-color: #0BADA6 !important;
+    }
 }
