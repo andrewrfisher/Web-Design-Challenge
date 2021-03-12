@@ -13,7 +13,6 @@ h2  {
     
 }
 
-
 li,p,a.figure-link   {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -22,24 +21,30 @@ li,p,a.figure-link   {
 /* bootstrap navbar edits */
 
 .active, .dropdown-menu .dropdown-item:active a:hover{
-    background-color:#E7E7E7!important; 
+    background-color:#E7E7E7; 
 }
 .dropdown-item{
-    color: #6D8092 !important; 
+    color: #6D8092 ; 
 }
+/* navbar limitations when it window decreases in size*/
+.navbar {
+    max-height: 55px;
+}
+
+/* dropdown edits changing background color and messing with links */
 .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
-    background-color:#E7E7E7 !important; 
+    background-color:#E7E7E7 ; 
 }
 a{
     color: #6D8092;
     font-size: 15px; 
 }
 .nav-link:hover{
-    background-color:#E7E7E7 !important;
+    background-color:#E7E7E7;
    }
 
 .navbar-brand:hover{
-color: rgb(175, 175, 175) !important;
+color: rgb(175, 175, 175);
 }
 
 
@@ -57,28 +62,38 @@ img.home-img    {
     width: 45%;
     float:left;
 }
+/* img on plot page*/
+img.plot-img    {
+    margin:auto;
+    width: 90%;
+    display:block;
+}
 
 /* img on the home page in visualization box*/
 img.home-vis-img    {
     margin: auto;
-    width: 100%;
+    width: 110%;
     float:left;
+    
+}
+/* img hover settings*/
+img.home-vis-img:hover   {
+    background-color: #0BADA6;
+    width: 110%;
+    opacity: 0.5;
+     
 }
 
-/* div box for latitude title at top of page */
-.navbar-brand-box   {
-    margin: auto;
-    background-color: #0BADA6;
-    text-align: center;
-}
 
 /* Latitude title on top left of page */
 #latitude   {
-    color: white;
-    padding: 5px;
-    text-align: center;
-    font-weight: bold;
-    margin: auto;
+    color: white; 
+    margin-left: 30px; 
+    padding: 5px; 
+    font-size: 22px;
+    font-weight: bold; 
+    background-color: #0BADA6;
+    font-family: Georgia,
 }
 
 /* p tags on the comparison page */
@@ -96,6 +111,14 @@ img.comparisons   {
     display:block;
     width: 85%;
     padding: 10px;
+}
+
+/* img hover settings*/
+img.comparisons:hover   {
+    background-color: #0BADA6;
+    width: 85%;
+    opacity: 0.5;
+     
 }
 
 /* Solid border/section */
@@ -124,8 +147,25 @@ hr.solid {
 }
 
   /* Media Queries */
-@media(max-width: 992px){
+@media(max-width: 1000px){
     .navbar-expand-lg   {
-    background-color: #0BADA6 !important;
+    background-color: #0BADA6;
     }
+    .navbar{
+        max-height: none; 
+        padding: inherit;
+        background-color: #0BADA6;
+    }
+    .navbar div{
+        margin: inherit;   
+    }
+    .navbar-brand{
+        padding: 10px; 
+    }
+    
+    button{
+        margin-right: 30px; 
+    }
+
 }
+/* hover settings from bootstrap*/
