@@ -74,6 +74,7 @@ img.home-vis-img    {
     margin: auto;
     width: 110%;
     float:left;
+    padding: 10px;
     
 }
 /* img hover settings*/
@@ -148,8 +149,8 @@ hr.solid {
 
   /* Media Queries */
 @media(max-width: 1000px){
-    .navbar-expand-lg   {
-    background-color: #0BADA6;
+    #custom-nav.bg-light  {
+    background-color: #0BADA6 !important;
     }
     .navbar{
         max-height: none; 
